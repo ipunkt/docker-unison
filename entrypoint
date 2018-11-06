@@ -4,4 +4,5 @@ SERVERCMD="${SERVERCMD:-unison}"
 REMOTESERVER="${REMOTESERVER}"
 
 export UNISON=/unison
+export UNISONLOCALHOSTNAME=${UNISONLOCALHOSTNAME:-container}
 unison -servercmd "${SERVERCMD}" -batch /target "${REMOTESERVER}"

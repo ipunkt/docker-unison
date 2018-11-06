@@ -12,3 +12,6 @@ Set SERVERCMD if unison is not in the remote servers' paths or has a name other
 thatn `unison`
 
 Set REMOTESERVER to the target. Example //remoteserver/path/from/home
+
+Set UNISONLOCALHOSTNAME if you want to use the meta data volume with more than
+one container. Otherwise it will default to `unisoncontainer`
