@@ -1,0 +1,7 @@
+#!/bin/sh
+
+SERVERCMD="${SERVERCMD:-unison}"
+REMOTESERVER="${REMOTESERVER}"
+
+export UNISON=/unison
+unison -servercmd "${SERVERCMD}" -batch /target "${REMOTESERVER}"
