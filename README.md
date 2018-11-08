@@ -15,3 +15,8 @@ Set REMOTESERVER to the target. Example //remoteserver/path/from/home
 
 Set UNISONLOCALHOSTNAME if you want to use the meta data volume with more than
 one container. Otherwise it will default to `unisoncontainer`
+
+## Strange segfaults
+The statically linked unison 2.40.61 executable uses vsyscalls which fail on
+recent linux kernels. See https://einsteinathome.org/de/content/vsyscall-now-disabled-latest-linux-distros
+how this can be fixed. However I do not recommend doing this.
